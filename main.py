@@ -1,3 +1,5 @@
+lista = []
+
 while True:
     print("1. Agregar")
     print("2. Mostrar")
@@ -6,7 +8,9 @@ while True:
 
     if op == "1":
         nombre = input("Nombre: ")
+        lista.append(nombre)
     elif op == "2":
-        print(nombre)
+        for n in lista:
+            print(n)
     elif op == "0":
         break
