@@ -8,9 +8,13 @@ while True:
 
     if op == "1":
         nombre = input("Nombre: ")
+        edad = input("Edad: ")
         lista.append(nombre)
+        lista.append(edad)
+
     elif op == "2":
         for n in lista:
             print(n)
     elif op == "0":
         break
+    
